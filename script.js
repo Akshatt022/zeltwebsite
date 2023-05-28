@@ -229,3 +229,15 @@ ScrollTrigger.create({
   end: `300% top`,
 });
 
+var blank = document.querySelector("#blank")
+var navsvg = document.querySelector("#nav svg")
+var nav1 = document.querySelector("#blank i")
+var navmob = document.querySelector("#nav-mob")
+
+navmob.addEventListener("click",function(){
+blank.style.top = 0
+})
+nav1.addEventListener("click",function(){
+blank.style.top = "-100vh"
+})
+
